@@ -119,7 +119,7 @@ body {
         }//.aboutContainer
     }//#about
     #donate {
-        background: linear-gradient($light-blue, $light-blue);
+        background: linear-gradient($light-blue, $main-blue);
         margin-top: -4vh;
         h1 {
             text-align: center;
@@ -274,14 +274,40 @@ body {
                 background: $main-green;
                 transition: .3s ease;
                 color: $accent-second;
+                margin-bottom: 2rem;
                 &:hover {
                     transition: .3s ease;
                     background: $light-blue;
                 }
             }
         }
-        
-    }
+    }//.aboutContainerSecond
+    footer {
+        background: $light-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .treeIcon {
+            @include anchor(1.5rem, uppercase);
+            margin-bottom: 2rem;
+            padding-top: 2rem;
+            span{
+                color: $main-blue;
+                background: $accent-second;
+            }
+        }
+        h1 {
+            @include anchor(1.5rem, capitalize);
+            margin-bottom:2rem;
+        }
+        a {
+            margin-bottom: 2rem;
+            @include anchor(1rem, uppercase);
+        }
+        .spacer{
+            height: 5vh;
+        }
+    }//footer
 }//body
 
 //•

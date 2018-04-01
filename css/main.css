@@ -7,7 +7,7 @@
 }
 
 body header .headerContainer {
-  background: linear-gradient(45deg, #5F46BE, #7058cd);
+  background: linear-gradient(45deg, #5F46BE, #aa94ff);
   height: 100vh;
 }
 
@@ -139,7 +139,7 @@ body #about .aboutContainer .aboutText p {
 }
 
 body #donate {
-  background: linear-gradient(#7058cd, #7058cd);
+  background: linear-gradient(#aa94ff, #5F46BE);
   margin-top: -4vh;
 }
 
@@ -223,7 +223,7 @@ body #donate .donateContainer .donateBox a {
 }
 
 body #donate .donateContainer .donateBox a:hover {
-  background: #7058cd;
+  background: #aa94ff;
   transition: .3s ease;
 }
 
@@ -373,10 +373,55 @@ body #contact form input[type="submit"], body #contact form textarea[type="submi
   background: #30B133;
   transition: .3s ease;
   color: #fff;
+  margin-bottom: 2rem;
 }
 
 body #contact form input[type="submit"]:hover, body #contact form textarea[type="submit"]:hover {
   transition: .3s ease;
-  background: #7058cd;
+  background: #aa94ff;
+}
+
+body footer {
+  background: #aa94ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body footer .treeIcon {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+body footer .treeIcon span {
+  color: #5F46BE;
+  background: #fff;
+}
+
+body footer h1 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+body footer a {
+  margin-bottom: 2rem;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+body footer .spacer {
+  height: 5vh;
 }
 /*# sourceMappingURL=main.css.map */
