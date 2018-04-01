@@ -281,4 +281,102 @@ body .aboutContainerSecond .aboutContainerFlex .aboutText p {
   text-transform: capitalize;
   color: #000;
 }
+
+body .lastCTA {
+  background: linear-gradient(rgba(48, 177, 51, 0.8), rgba(95, 70, 190, 0.8)), url(../img/mountains1280.png);
+}
+
+body .lastCTA .lastCTAText {
+  padding: 8rem;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body .lastCTA .lastCTAText h1 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 1.3rem;
+}
+
+body .lastCTA .lastCTAText p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+body #contact {
+  background: #c9c9c9;
+  text-align: center;
+}
+
+body #contact h1 {
+  padding-top: 2rem;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #000;
+}
+
+body #contact h2 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #30B133;
+}
+
+body #contact form {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #000;
+}
+
+body #contact form label {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+body #contact form input, body #contact form textarea {
+  outline: none;
+  border: 1px solid #c9c9c9;
+  border-radius: 3%;
+  padding: .5rem;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #000;
+}
+
+body #contact form textarea {
+  margin-bottom: 2rem;
+}
+
+body #contact form input[type="submit"], body #contact form textarea[type="submit"] {
+  background: #30B133;
+  transition: .3s ease;
+  color: #fff;
+}
+
+body #contact form input[type="submit"]:hover, body #contact form textarea[type="submit"]:hover {
+  transition: .3s ease;
+  background: #7058cd;
+}
 /*# sourceMappingURL=main.css.map */
