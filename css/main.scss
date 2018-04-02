@@ -14,14 +14,13 @@ body {
     header {
         .headerContainer {
             background: linear-gradient(45deg, $main-blue, $light-blue );
-            height: 100vh;
-            
             .iconNav {
                 width: 80vw;
                 margin: 0 auto;
+                margin-bottom: 10vh;
                 display: flex;
                 justify-content: space-between;
-                padding: 1rem;
+                padding: 1%;
                 @include anchor(2rem, uppercase);
                 .treeIcon {
                     span {
@@ -50,20 +49,19 @@ body {
             margin: 0 auto;
             width: 80vw;
             display: flex;
-            justify-content: space-between;
-            .welcomeImg {
-                img {
-                    width: 40vw;
-                }
+            justify-content: center;
+            flex-wrap: wrap;
+            img {
+                max-width: 35%;
+                align-self: flex-end;
+                margin-bottom: -4vh;
             }
             .welcomeText {
-                width: 40vw;
                 display: flex;
                 flex-direction: column;
                 align-self: center;
-                @include anchor(2rem, capitalize);
+                @include anchor(2rem, none);
                 p {
-
                     font-size: 1rem !important;
                 }//p
                 a {
@@ -74,12 +72,10 @@ body {
                     text-align: center;
                     align-self: center;
                     margin-top: 2vh;
-                    padding: .7rem;
-                    width: 20vw;
+                    width: 60%;
                     border: 1px solid $main-green;
                     transition: .3s ease;
                     &:hover {
-                        
                         background: $main-blue;
                     }
                 }
@@ -87,32 +83,30 @@ body {
         }
     }//header
     #about {
-        width: 80vw;
+        width: 90vw;
         margin: 0 auto;
         margin-top: 10vh;
         .aboutContainer {
             display: flex;
-            justify-content: space-between;
-            .treeImg {
-                img {
-                    width: 40vw;
-                }
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+            img {
+                max-width: 45vw;
             }
             .aboutText {
-                display: flex;
-                flex-direction: column;
-                align-self: center;
+                width: 45vw;
                 h1 {
-                    @include anchor(3rem, capitalize);
+                    @include anchor(2.5rem, none);
                     color: $header !important;
                 }
                 h2 {
-                    @include anchor(2rem, capitalize);
+                    @include anchor(2rem, none);
                     color: $main-green !important;
                 }
                 p {
-                    margin-top: 4vh;
-                    @include anchor (1rem, capitalize);
+                    margin-top: 2vh;
+                    @include anchor (1rem, none);
                     color: $header;
                 }
             }//.aboutText
@@ -124,31 +118,33 @@ body {
         h1 {
             text-align: center;
             padding-top: 2rem;
-            @include anchor(2rem, capitalize);
+            @include anchor(2rem, none);
 
         }
         .donateContainer {
-            padding: 5rem;
+            padding: 2%;
             display: flex;
             justify-content: space-around;
             text-align: center;
+            flex-wrap: wrap;
 
             .donateBox {
                 background: $accent-second;
-                padding: 5rem;
+                padding: 3.5rem;
                 transition: .6s ease;
+                margin-bottom: 1rem;
                 h2 {
-                    @include anchor(2.3rem, capitalize);
+                    @include anchor(2.3rem, none);
                     color: $main-green !important;
                     margin-bottom: 1rem;
                 }
                 p {
-                    @include anchor(1.5rem, capitalize);
+                    @include anchor(1.5rem, none);
                     color: $header !important;
                     margin-bottom: 1rem;
                 }
                 ul {
-                    @include anchor(1rem, capitalize);
+                    @include anchor(1rem, none);
                     color: $header !important;
                     list-style-type: none;
 
@@ -184,33 +180,35 @@ body {
         }
     }
     .aboutContainerSecond {
-        width: 80vw;
+        width: 90vw;
         margin: 0 auto;
         padding-top: 6vh;
         .aboutContainerFlex {
             display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap-reverse;
             .bough {
+                align-self: flex-end;
                 img {
                     margin-top: -8vh;
-                    width: 40vw;
+                    width: 45vw;
                 }
             }
             .aboutText {
-                display: flex;
-                flex-direction: column;
-                align-self: center;
+                width: 45vw;
                 h1 {
-                    @include anchor(2.4rem, capitalize);
+                    @include anchor(2.4rem, none);
                     color: $header;
                     margin-bottom: 1rem;
                 }
                 h2 {
-                    @include anchor(1.7rem, capitalize);
+                    @include anchor(1.7rem, none);
                     color: $main-green;
                     margin-bottom: 1rem;
                 }
                 p {
-                    @include anchor(1rem, capitalize);
+                    @include anchor(1rem, none);
                     color: $header;
                     
                 }
@@ -222,16 +220,14 @@ body {
             linear-gradient(rgba(48, 177, 51, .8), rgba(95, 70, 190, .8)),
             url(../img/mountains1280.png);
         .lastCTAText {
-            padding: 8rem;
-            width: 80vw;
-            margin: 0 auto;
+            padding: 10%;
             text-align: center;
             h1 {
-                @include anchor(2rem, capitalize);
+                @include anchor(2rem, none);
                 margin-bottom: 1.3rem;
             }
             p {
-                @include anchor(1rem, capitalize);
+                @include anchor(1rem, none);
             }
         }
     }
@@ -240,11 +236,11 @@ body {
         text-align: center;
         h1 {
             padding-top: 2rem;
-            @include anchor(2rem, capitalize);
+            @include anchor(2rem, none);
             color: $header;
         }
         h2 {
-            @include anchor(2rem, capitalize);
+            @include anchor(2rem, none);
             color: $main-green;
         }
         form {
@@ -252,7 +248,7 @@ body {
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            @include anchor(1rem, capitalize);
+            @include anchor(1rem, none);
             color: $header;
             label {
                 text-align: left;
@@ -263,7 +259,7 @@ body {
                 border: 1px solid $accent;
                 border-radius: 3%;
                 padding: .5rem;
-                @include anchor(1rem, capitalize);
+                @include anchor(1rem, none);
                 color: $header;
             }
             textarea {
@@ -297,7 +293,7 @@ body {
             }
         }
         h1 {
-            @include anchor(1.5rem, capitalize);
+            @include anchor(1.5rem, none);
             margin-bottom:2rem;
         }
         a {
@@ -310,4 +306,27 @@ body {
     }//footer
 }//body
 
-//•
+@media screen and (max-width: 720px) {
+    body {
+        #about {
+            .aboutContainer {
+                .aboutText {
+                    width: 70vw;
+                }
+            }
+        }
+        .aboutContainerSecond {
+            .aboutContainerFlex {
+                .aboutText {
+                    width: 70vw;
+                    margin-bottom: 3vh;
+                }
+            }
+        }
+        #donate {
+            h1 {
+                margin: 2vh;
+            }
+        }
+    }
+}

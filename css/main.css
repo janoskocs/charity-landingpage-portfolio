@@ -8,15 +8,15 @@
 
 body header .headerContainer {
   background: linear-gradient(45deg, #5F46BE, #aa94ff);
-  height: 100vh;
 }
 
 body header .headerContainer .iconNav {
   width: 80vw;
   margin: 0 auto;
+  margin-bottom: 10vh;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1%;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -48,15 +48,17 @@ body header .welcome {
   margin: 0 auto;
   width: 80vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-body header .welcome .welcomeImg img {
-  width: 40vw;
+body header .welcome img {
+  max-width: 35%;
+  align-self: flex-end;
+  margin-bottom: -4vh;
 }
 
 body header .welcome .welcomeText {
-  width: 40vw;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -64,7 +66,7 @@ body header .welcome .welcomeText {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 body header .welcome .welcomeText p {
@@ -79,8 +81,7 @@ body header .welcome .welcomeText a {
   text-align: center;
   align-self: center;
   margin-top: 2vh;
-  padding: .7rem;
-  width: 20vw;
+  width: 60%;
   border: 1px solid #30B133;
   transition: .3s ease;
 }
@@ -90,32 +91,32 @@ body header .welcome .welcomeText a:hover {
 }
 
 body #about {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   margin-top: 10vh;
 }
 
 body #about .aboutContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
 }
 
-body #about .aboutContainer .treeImg img {
-  width: 40vw;
+body #about .aboutContainer img {
+  max-width: 45vw;
 }
 
 body #about .aboutContainer .aboutText {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+  width: 45vw;
 }
 
 body #about .aboutContainer .aboutText h1 {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 3rem;
-  text-transform: capitalize;
+  font-size: 2.5rem;
+  text-transform: none;
   color: #000 !important;
 }
 
@@ -124,17 +125,17 @@ body #about .aboutContainer .aboutText h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #30B133 !important;
 }
 
 body #about .aboutContainer .aboutText p {
-  margin-top: 4vh;
+  margin-top: 2vh;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #000;
 }
 
@@ -150,20 +151,22 @@ body #donate h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 body #donate .donateContainer {
-  padding: 5rem;
+  padding: 2%;
   display: flex;
   justify-content: space-around;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 body #donate .donateContainer .donateBox {
   background: #fff;
-  padding: 5rem;
+  padding: 3.5rem;
   transition: .6s ease;
+  margin-bottom: 1rem;
 }
 
 body #donate .donateContainer .donateBox h2 {
@@ -171,7 +174,7 @@ body #donate .donateContainer .donateBox h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2.3rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #30B133 !important;
   margin-bottom: 1rem;
 }
@@ -181,7 +184,7 @@ body #donate .donateContainer .donateBox p {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #000 !important;
   margin-bottom: 1rem;
 }
@@ -191,7 +194,7 @@ body #donate .donateContainer .donateBox ul {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #000 !important;
   list-style-type: none;
 }
@@ -233,24 +236,29 @@ body #donate .donateContainer .donateBox:hover {
 }
 
 body .aboutContainerSecond {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   padding-top: 6vh;
 }
 
 body .aboutContainerSecond .aboutContainerFlex {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+body .aboutContainerSecond .aboutContainerFlex .bough {
+  align-self: flex-end;
 }
 
 body .aboutContainerSecond .aboutContainerFlex .bough img {
   margin-top: -8vh;
-  width: 40vw;
+  width: 45vw;
 }
 
 body .aboutContainerSecond .aboutContainerFlex .aboutText {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+  width: 45vw;
 }
 
 body .aboutContainerSecond .aboutContainerFlex .aboutText h1 {
@@ -258,7 +266,7 @@ body .aboutContainerSecond .aboutContainerFlex .aboutText h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2.4rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #000;
   margin-bottom: 1rem;
 }
@@ -268,7 +276,7 @@ body .aboutContainerSecond .aboutContainerFlex .aboutText h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.7rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #30B133;
   margin-bottom: 1rem;
 }
@@ -278,7 +286,7 @@ body .aboutContainerSecond .aboutContainerFlex .aboutText p {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #000;
 }
 
@@ -287,9 +295,7 @@ body .lastCTA {
 }
 
 body .lastCTA .lastCTAText {
-  padding: 8rem;
-  width: 80vw;
-  margin: 0 auto;
+  padding: 10%;
   text-align: center;
 }
 
@@ -298,7 +304,7 @@ body .lastCTA .lastCTAText h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  text-transform: capitalize;
+  text-transform: none;
   margin-bottom: 1.3rem;
 }
 
@@ -307,7 +313,7 @@ body .lastCTA .lastCTAText p {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 body #contact {
@@ -321,7 +327,7 @@ body #contact h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #000;
 }
 
@@ -330,7 +336,7 @@ body #contact h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #30B133;
 }
 
@@ -343,7 +349,7 @@ body #contact form {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #000;
 }
 
@@ -361,7 +367,7 @@ body #contact form input, body #contact form textarea {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #000;
 }
 
@@ -408,7 +414,7 @@ body footer h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  text-transform: capitalize;
+  text-transform: none;
   margin-bottom: 2rem;
 }
 
@@ -423,5 +429,18 @@ body footer a {
 
 body footer .spacer {
   height: 5vh;
+}
+
+@media screen and (max-width: 720px) {
+  body #about .aboutContainer .aboutText {
+    width: 70vw;
+  }
+  body .aboutContainerSecond .aboutContainerFlex .aboutText {
+    width: 70vw;
+    margin-bottom: 3vh;
+  }
+  body #donate h1 {
+    margin: 2vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
