@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
 
 
 body {
@@ -306,6 +310,61 @@ body {
             height: 5vh;
         }
     }//footer
+
+    .popUp {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: $header;
+        background-color: rgba(0,0,0,0.4);
+        .popUpContent {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            text-align: center;
+
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            animation-name: animatetop;
+            animation-duration: 0.8s;
+            h1 {
+                @include anchor(2rem, none);
+                color: $main-green;
+            }
+            p {
+                @include anchor(1.7rem, none);
+                color: $header;
+                
+            }
+            span {
+                display: inline-block;
+                margin-top: 4vh;
+                color: $main-green;
+                font-size: 2rem;
+                border: 1px solid $main-green;
+                border-radius: 100%;
+                padding: 1rem 1.8rem 1rem 1.8rem;
+            }
+            .close {
+                @include anchor(2rem, none);
+                padding: 2rem;
+                color: red;
+                display: inline-block;
+                border-bottom: 1px solid transparent;
+                &:hover {
+                    color: $header;
+                    border-bottom: 1px solid $header;
+                    cursor: pointer;
+                }
+            }
+        } 
+    }
 }//body
 
 @media screen and (max-width: 720px) {

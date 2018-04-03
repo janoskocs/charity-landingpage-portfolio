@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 body header .headerContainer {
   background: linear-gradient(45deg, #5F46BE, #aa94ff);
 }
@@ -429,6 +440,77 @@ body footer a {
 
 body footer .spacer {
   height: 5vh;
+}
+
+body .popUp {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+body .popUp .popUpContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.8s;
+}
+
+body .popUp .popUpContent h1 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: none;
+  color: #30B133;
+}
+
+body .popUp .popUpContent p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  text-transform: none;
+  color: #000;
+}
+
+body .popUp .popUpContent span {
+  display: inline-block;
+  margin-top: 4vh;
+  color: #30B133;
+  font-size: 2rem;
+  border: 1px solid #30B133;
+  border-radius: 100%;
+  padding: 1rem 1.8rem 1rem 1.8rem;
+}
+
+body .popUp .popUpContent .close {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: none;
+  padding: 2rem;
+  color: red;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+}
+
+body .popUp .popUpContent .close:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 720px) {

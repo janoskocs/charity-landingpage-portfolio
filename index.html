@@ -62,7 +62,7 @@
                         <li>Acces to slack group</li>
                         <li>1 tree a month planted</li>
                     </ul>
-                    <a href="#placeholder">Pick</a>
+                    <a href="#placeholder" onclick="openPopUp();">Pick</a>
                 </div>
                 <div class="donateBox">
                     <h2>Forest</h2>
@@ -72,7 +72,7 @@
                         <li>Acces to secret content</li>
                         <li>3 trees a month planted</li>
                     </ul>
-                    <a href="#placeholder">Pick</a>
+                    <a href="#placeholder" onclick="openPopUp();">Pick</a>
                 </div>
 
                 <div class="donateBox">
@@ -82,7 +82,7 @@
                         <li>Be in our video</li>
                         <li>15 trees a month planted</li>
                     </ul>
-                    <a href="#placeholder">Pick</a>
+                    <a href="#placeholder" onclick="openPopUp();">Pick</a>
                 </div>
             </div>
         </div><!-- #donate -->
@@ -129,10 +129,35 @@
             </div>
             <div class="spacer"></div>
         </footer>
+        <div class="popUp">
+            <div class="popUpContent">
+                <span>&#10003;</span>
+                <h1>Thank you!</h1>
+                <p>Together we can build a future.</p>
+                <div class="close" onclick="closePopUp();">&times; Close</div>
+            </div>
+        </div>
         <script>
             $(document).ready(function() {
-                $("#mainTree").fadeIn();
+                // POPUP 
+                
             });
+
+            const popUp = document.querySelector(".popUp");
+            const popUpContent = document.querySelector(".popUpContent");
+                
+                function openPopUp() {
+                    popUp.style.display = "block";
+                }
+                function closePopUp() {
+                    popUp.style.display = "none";
+                }
+
+                window.onclick = function(event) {
+                if (event.target == popUp) {
+                    popUp.style.display = "none";
+                }
+}
         </script>
     </body>
 </html>
