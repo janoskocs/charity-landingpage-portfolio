@@ -34,7 +34,7 @@
                             <a href="#donate">Donate</a>
                             <a href="#about">Learn more</a>
                         </div>
-                        <img src="../img/tree-green.png" alt="Picture of a tree." draggable="false">
+                        <img src="../img/tree-green.png" id="mainTree" alt="Picture of a tree." draggable="false">
                     </div>
             </div><!-- headerContainer -->
         </header>
@@ -129,5 +129,10 @@
             </div>
             <div class="spacer"></div>
         </footer>
+        <script>
+            $(document).ready(function() {
+                $("#mainTree").fadeIn();
+            });
+        </script>
     </body>
 </html>

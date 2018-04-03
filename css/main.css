@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("leelawaldee.ttf");
 * {
   margin: 0;
   padding: 0;
@@ -449,6 +448,19 @@ body footer .spacer {
   }
   header .welcome .welcomeText p {
     text-align: center;
+  }
+  header .headerContainer .iconNav {
+    flex-direction: column;
+  }
+  header .headerContainer .iconNav .treeIcon {
+    text-align: center;
+  }
+  header .headerContainer .iconNav nav {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  header .headerContainer .iconNav nav a {
+    margin-bottom: 2vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

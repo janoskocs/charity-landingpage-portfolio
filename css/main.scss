@@ -1,4 +1,4 @@
-@import url('leelawaldee.ttf');
+
 @import "vars";
 @import "mixins";
 
@@ -37,6 +37,7 @@ body {
                         padding: 1.5rem;
                         margin-right: 1rem;
                         transition: .2s ease;
+                        
                         &:hover {
                             transition: .2s ease;
                             color: $main-green;
@@ -339,6 +340,21 @@ body {
                 }
                 p {
                     text-align: center;
+                }
+            }
+        }
+        .headerContainer {
+            .iconNav {
+                flex-direction: column;
+                .treeIcon {
+                    text-align: center;
+                }
+                nav {
+                    margin-top: 5vh;
+                    text-align: center;
+                    a {
+                        margin-bottom: 2vh;
+                    }
                 }
             }
         }
